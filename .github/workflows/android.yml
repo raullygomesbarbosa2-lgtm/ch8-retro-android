@@ -26,8 +26,8 @@ jobs:
         with: {name: CH8-Retro-APK, path: app/build/outputs/apk/debug/*.apk, retention-days: 30}
       - uses: softprops/action-gh-release@v2
         with:
-          tag_name: ch8-retro-v1
-          name: CH8 Retrô — APK de teste
-          body: 'Android 6+ nativo/offline. Emulador CHIP-8 e 200 desafios homebrew inclusos. Build de CI; testar no aparelho.'
+          tag_name: ch8-retro-v2
+          name: CH8 Retrô — 30 opções (protótipo)
+          body: 'Android 6+ nativo/offline. Biblioteca com 30 variações de desafio homebrew geradas no app. Não exige ROM externa. Protótipo CHIP-8, ainda não testado no aparelho.'
           files: app/build/outputs/apk/debug/*.apk
           make_latest: true
