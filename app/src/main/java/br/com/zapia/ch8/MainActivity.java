@@ -22,9 +22,9 @@ public class MainActivity extends Activity {
       // CHIP-8 ROM: move the player with 2/4/6/8 and reach the glowing pixel.
       c.add(0x00E0);c.add(0x6008);c.add(0x6108);c.add(0x6200|x);c.add(0x6300|y);
       c.add(0x00E0);c.add(0xA050);c.add(0xD235);c.add(0xA055);c.add(0xD015);c.add(0xF50A);
-      c.add(0x6506);c.add(0xE59E);c.add(0x1220);c.add(0x7001);c.add(0x120A);
-      c.add(0x6504);c.add(0xE59E);c.add(0x122A);c.add(0x70FF);c.add(0x120A);
-      c.add(0x6508);c.add(0xE59E);c.add(0x1234);c.add(0x7101);c.add(0x120A);
+      c.add(0x6506);c.add(0xE59E);c.add(0x121E);c.add(0x7001);c.add(0x120A);
+      c.add(0x6504);c.add(0xE59E);c.add(0x1228);c.add(0x70FF);c.add(0x120A);
+      c.add(0x6508);c.add(0xE59E);c.add(0x1232);c.add(0x7101);c.add(0x120A);
       c.add(0x6502);c.add(0xE59E);c.add(0x120A);c.add(0x71FF);c.add(0x120A);
       c.add(0x120A);byte[] r=new byte[c.size()*2];for(int i=0;i<c.size();i++){r[i*2]=(byte)(c.get(i)>>8);r[i*2+1]=(byte)(int)c.get(i);}return r;
     }
