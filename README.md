@@ -1,2 +1,2 @@
-# ch8-retro-android
-Emulador CHIP-8 retrô com jogos próprios/homebrew para Android 6+
+# CH8 Retrô
+Emulador CHIP-8 Android nativo (sem WebView), Android 6+, offline. Inclui 200 desafios homebrew parametrizados e controles virtuais. Nenhuma ROM comercial é distribuída.
