@@ -11,7 +11,7 @@ public class MainActivity extends Activity {
     TextView title=text("CH8 RETRÔ",30,GREEN);title.setTypeface(Typeface.MONOSPACE,Typeface.BOLD);root.addView(title,new LinearLayout.LayoutParams(-1,66));TextView sub=text("ARCADE CHIP-8 • 200 CARTUCHOS OFFLINE",13,MINT);sub.setTypeface(Typeface.MONOSPACE,0);root.addView(sub,new LinearLayout.LayoutParams(-1,42));
     TextView note=text("Escolha um desafio homebrew e jogue sem internet. Controles virtuais incluídos.",14,Color.LTGRAY);note.setPadding(12,6,12,12);root.addView(note);
     ScrollView scroll=new ScrollView(this);root.addView(scroll,new LinearLayout.LayoutParams(-1,0,1));LinearLayout list=new LinearLayout(this);list.setOrientation(1);scroll.addView(list);
-    for(int i=0;i<200;i++){final int n=i;TextView item=text(String.format(Locale.US,"%03d  •  %s",i+1,Games.name(i)),17,MINT);item.setGravity(Gravity.CENTER_VERTICAL);item.setPadding(18,0,12,0);item.setTypeface(Typeface.MONOSPACE,1);item.setBackground(shape(PANEL,18,1));LinearLayout.LayoutParams lp=new LinearLayout.LayoutParams(-1,58);lp.setMargins(0,5,0,5);list.addView(item,lp);item.setOnClickListener(v->start(n));}
+    for(int i=0;i<30;i++){final int n=i;TextView item=text(String.format(Locale.US,"%03d  •  %s",i+1,Games.name(i)),17,MINT);item.setGravity(Gravity.CENTER_VERTICAL);item.setPadding(18,0,12,0);item.setTypeface(Typeface.MONOSPACE,1);item.setBackground(shape(PANEL,18,1));LinearLayout.LayoutParams lp=new LinearLayout.LayoutParams(-1,58);lp.setMargins(0,5,0,5);list.addView(item,lp);item.setOnClickListener(v->start(n));}
   }
   void start(int n){emu=new Emulator(this,n);setContentView(emu.screen());}
   @Override public void onBackPressed(){if(emu!=null){emu.stop();emu=null;showLibrary();}else super.onBackPressed();}
