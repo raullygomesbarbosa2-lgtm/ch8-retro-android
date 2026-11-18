@@ -1,5 +1,5 @@
 plugins { id 'com.android.application' }
 
 android { namespace 'br.com.zapia.ch8'; compileSdk 35
-  defaultConfig { applicationId 'br.com.zapia.ch8'; minSdk 23; targetSdk 28; versionCode 2; versionName '1.1' }
+  defaultConfig { applicationId 'br.com.zapia.ch8'; minSdk 23; targetSdk 28; versionCode 3; versionName '2.0' }
 }
